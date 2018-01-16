@@ -103,7 +103,7 @@ class RPCRequest(Thread):
 
 class DaemonRPCRequest():
     def __init__(self, app):
-        self.port = 19734
+        self.port = 3000
         self.url = "http://localhost:%d/json_rpc" % self.port
         self.app = app
         
