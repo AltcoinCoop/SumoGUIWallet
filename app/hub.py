@@ -210,7 +210,7 @@ class Hub(QObject):
                                         if mnemonic_seed else "Creating wallet...")
                 self.app_process_events()
                 wallet_filepath = os.path.join(wallet_dir_path, str(uuid.uuid4().hex) + '.bin')
-                wallet_log_path = os.path.join(wallet_dir_path, 'sumo-wallet-cli.log')
+                wallet_log_path = os.path.join(wallet_dir_path, 'mynt-wallet-cli.log')
                 resources_path = self.app.property("ResPath")
                 if not mnemonic_seed: # i.e. create new wallet
                     self.wallet_cli_manager = WalletCliManager(resources_path, \
